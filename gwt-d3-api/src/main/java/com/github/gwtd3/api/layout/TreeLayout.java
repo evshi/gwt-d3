@@ -82,8 +82,8 @@ public class TreeLayout
      * @param a two-element array of width and height of tree
      * @return this tree object
      */
-    public final native TreeLayout size(double width, double height) /*-{
-		return this.size([ width, height ]);
+    public final native TreeLayout size(Array<Double> size) /*-{
+		return this.size(size);
     }-*/;
 
     /**
@@ -108,8 +108,8 @@ public class TreeLayout
      * 
      * @return this tree layout
      */    
-    public final native TreeLayout nodeSize(double width, double height) /*-{
-        return this.nodeSize([ width, height ]);
+    public final native TreeLayout nodeSize(Array<Double> nodeSize) /*-{
+        return this.nodeSize(nodeSize);
     }-*/;
 
     /**

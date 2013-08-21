@@ -162,7 +162,7 @@ public class Zoom extends JavaScriptObject implements IsFunction {
 	 * @param the zoom scale's allowed range as a two-element array
 	 * @return the current zoom object
 	 */
-	public final native Zoom scaleExtent(double[] scale)/*-{
+	public final native Zoom scaleExtent(Array<Double> scale)/*-{
 		return this.scaleExtent(scale);
 	}-*/;
 
@@ -200,7 +200,7 @@ public class Zoom extends JavaScriptObject implements IsFunction {
 	 * @param the current zoom translation vector
 	 * @return the current zoom object
 	 */
-	public final native Zoom translate(double[] vector)/*-{
+	public final native Zoom translate(Array<Double> vector)/*-{
 		return this.translate(vector);
 	}-*/;
 
